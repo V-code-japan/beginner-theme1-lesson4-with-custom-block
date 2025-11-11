@@ -3,7 +3,7 @@
 player.onChat("run", function () {
     agent.teleport(world(19, -21, -1), EAST)
     for (let index = 0; index < 5; index++) {
-        ブロックをおく.ニンジンをうえる
+        ブロックをおく.ニンジンをうえる()
     }
 })
 ```
@@ -44,7 +44,7 @@ player.onChat("run", function () {
 player.onChat("run", function () {
     agent.teleport(world(19, -21, -1), EAST)
     for (let index = 0; index < 5; index++) {
-        ブロックをおく.ニンジンをうえる
+        ブロックをおく.ニンジンをうえる()
     }
 })
 ```
