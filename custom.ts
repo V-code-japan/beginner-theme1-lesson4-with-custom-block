@@ -20,10 +20,10 @@ enum MyEnum {
 namespace custom {
     /**
      * TODO: エージェントがブロックを1つ置いて左に移動する
-     * @param block describe block name, eg: GRASS
+     * @param block describe block ID
      */
     //% block
-    export function ブロックを1つおく(block: string): void {
+    export function ブロックを1つおく(block: number): void {
         agent.setItem(block, 1, 1)
         agent.place(FORWARD)
         agent.move(LEFT, 1)
@@ -31,11 +31,11 @@ namespace custom {
 
     /**
      * TODO: エージェントがブロックを指定した長さだけ左に並べていく
-     * @param block describe block name, eg: GRASS
+     * @param block describe block ID
      * @param length describe how many blocks agent sets, eg: 5
      */
     //% block
-    export function ブロックを1列ならべる(block: string, length: number): void {
+    export function ブロックを1列ならべる(block: number, length: number): void {
         for (let index = 0; index < length - 1; index++) {
             agent.setItem(block, 1, 1)
             agent.place(FORWARD)
