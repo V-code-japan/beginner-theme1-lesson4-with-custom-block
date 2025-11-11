@@ -10,7 +10,9 @@ enum MyEnum {
     //% block="two"
     Two,
     //% block="three"
-    Three
+    Three,
+    //% block="four"
+    Four
 }
 
 /**
@@ -51,5 +53,9 @@ namespace ブロックをおく {
     export function 次の位置に移動する(length: number = 3): void {
         agent.move(UP, 1)
         agent.move(RIGHT, length)
+    }
+
+    export function ニンジンをうえる(): void {
+        
     }
 }
