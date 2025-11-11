@@ -17,7 +17,7 @@ enum MyEnum {
  * Custom blocks
  */
 //% weight=100 color=#ff4500 icon=""
-namespace custom {
+namespace ブロックをおく {
     /**
      * TODO: エージェントがブロックを1つ置いて左に移動する
      * @param block describe block ID
@@ -47,6 +47,7 @@ namespace custom {
      * TODO: エージェントが次の位置へ移動する
      * @param length number of blocks agent moves to right, eg: 5
      */
+    //% block
     export function 次の位置に移動する(length: number): void {
         agent.move(UP, 1)
         agent.move(RIGHT, length)
