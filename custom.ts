@@ -21,7 +21,7 @@ enum MyEnum {
 //% weight=100 color=#ff4500 icon=""
 namespace ブロックをおく {
     /**
-     * TODO: エージェントがブロックを1つ置いて左に移動する
+     * エージェントがブロックを1つ置いて左に移動する
      * @param block describe block ID
      */
     //% block
@@ -32,7 +32,7 @@ namespace ブロックをおく {
     }
 
     /**
-     * TODO: エージェントがブロックを指定した長さだけ左に並べていく
+     * エージェントがブロックを指定した長さだけ左に並べていく
      * @param block describe block ID
      * @param length describe how many blocks agent sets, eg: 5
      */
@@ -46,7 +46,7 @@ namespace ブロックをおく {
     }
 
     /**
-     * TODO: エージェントが次の位置へ移動する
+     * エージェントが次の位置へ移動する
      * @param length number of blocks agent moves to right, eg: 5
      */
     //% block
@@ -55,7 +55,14 @@ namespace ブロックをおく {
         agent.move(RIGHT, length)
     }
 
+    /**
+     * エージェントがニンジンをうえて左に移動する
+     */
+    //% block
     export function ニンジンをうえる(): void {
-        
+        agent.setItem(CARROT, 1, 1)
+        agent.till(FORWARD)
+        agent.place(FORWARD)
+        agent.move(LEFT, 1)
     }
 }
