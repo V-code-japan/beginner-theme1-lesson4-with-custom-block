@@ -21,12 +21,14 @@ player.onChat("run", function () {
 ## 目標（もくひょう）
 <p>まずはこれから作るものの形をかくにんしよう！</p>
 <p>・チャットで「run」と入力したら、エージェントが５ブロックぶんニンジンをうえる</p>
-<p>・エージェントは、はじめにワールド19 -21 -1、東(xのプラス方向)にテレポートする</p>
+<p>・エージェントは、はじめに**ワールド19 -21 -1、東(xのプラス方向)**にテレポートする</p>
 <p><img style="width:100%" src="https://vcode-esia.com/images_for_world_data/Basic/Theme1/Lesson4/L4_cultivate1.gif"></p>
 
 ## エージェントをテレポートさせよう
 <p>`||agent.エージェント||`ボタンをクリックして、`||agent.エージェントを…へ西(xのマイナス方向)向きにテレポートさせる||`と書いてあるブロックを`||player.チャットコマンドrunを入力した時||`の上にドラックしてみましょう</p>
-<p>`||agent.西(xのマイナス方向)▼||`をクリックして`||agent.東(xのプラス方向)▼||`にしましょう</p>
+<p>・`||positions.ポジション||`ボタンをクリックしてその中の`||positions.ワールド(0 0 0)||`を`||agent.(~0 ~0 ~0)||`の上までドラッグします</p>
+<p>・`||positions.ワールド(0 0 0)||`を`||positions.ワールド(19 -21 -1)||`にしましょう</p>
+<p>・`||agent.西(xのマイナス方向)▼||`をクリックして`||agent.東(xのプラス方向)▼||`にしましょう</p>
 ```block
 player.onChat("run", function () {
     agent.teleport(world(19, -21, -1), EAST)
@@ -43,8 +45,9 @@ player.onChat("run", function () {
 <p>`||loops.ループ||`にある`||loops.くりかえし ○回||`は、**このコードではさんだ部分を、指定した数だけくりかえしてくれます**。</p>
 <p>たとえば、`||loops.くりかえし 10回||`で`||mobs.生き物をスポーンさせる||`をはさむと、`||mobs.生き物をスポーンさせる||`**を１０こならべたのと同じ意味になります！**</p>
 <p>`||loops.くりかえし ○回||`をつかって、エージェントにニンジンをくりかえしうえさせましょう！</p>
+<p><img style="width:100%" src="https://vcode-esia.com/images_for_world_data/Basic/Theme1/Lesson4/L4_without_loop.png"></p>
 
-## 3.エージェントにニンジンを植えてもらいましょう
+## 3.エージェントにニンジンを植えてもらおう
 <p>`||loops.ループ||`にある`||loops.くりかえし ○回||`と、`||ブロックをおく.ブロックをおく||`にある`||ブロックをおく.ニンジンをうえる||`をくみあわせて、**エージェントにニンジンを５つうえさせよう！**</p>
 <p><img style="width:100%" src="https://vcode-esia.com/images_for_world_data/Basic/Theme1/Lesson4/L4_complete1.gif"></p>
 ```block
