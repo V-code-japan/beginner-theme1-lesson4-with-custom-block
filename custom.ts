@@ -33,21 +33,21 @@ namespace ブロックをおく {
 
     /**
      * エージェントがブロックを指定した長さだけ左に並べていく
-     * @param block describe block ID
-     * @param length describe how many blocks agent sets, eg: 5
+     * @param block describe block ID, eg: GRASS
+     * @param length describe how many blocks agent sets, eg: 3
      */
     //% block
     export function ブロックを1列ならべる(block: number = GRASS, length: number = 3): void {
         for (let index = 0; index < length - 1; index++) {
             agent.setItem(block, 1, 1)
             agent.place(FORWARD)
-            agent.move(LEFT, 1)
+            agent.move(LEFT, length)
         }
     }
 
     /**
      * エージェントが次の位置へ移動する
-     * @param length number of blocks agent moves to right, eg: 5
+     * @param length number of blocks agent moves to right, eg: 3
      */
     //% block
     export function 次の位置に移動する(length: number = 3): void {
