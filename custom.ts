@@ -37,6 +37,7 @@ namespace ブロックをおく {
      * @param length describe how many blocks agent sets, eg: 3
      */
     //% block
+    //% block.defl = Block.Grass
     export function ブロックを1列ならべる(block: number = GRASS, length: number = 3): void {
         for (let index = 0; index < length - 1; index++) {
             agent.setItem(block, 1, 1)
