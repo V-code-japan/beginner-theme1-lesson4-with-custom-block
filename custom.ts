@@ -67,4 +67,16 @@ namespace ブロックをおく {
         agent.place(FORWARD)
         agent.move(LEFT, 1)
     }
+
+    /**
+     * test
+     */
+    //% block
+    //% block.fieldEditor="gridpicker"
+    //% block.fieldOptions.width=220
+    //% block.fieldOptions.maxRows=10
+    //% block.fieldOptions.columns=8
+    //% block.fieldOptions.hasSearchBar=true
+    export function test(block: Block) {
+    }
 }

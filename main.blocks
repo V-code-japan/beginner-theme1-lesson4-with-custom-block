@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="phyUVCkjOL4/njI~0Lng" x="0" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="`TFv]m61B$BKLLgdS4L*" x="0" y="0"><statement name="HANDLER"><block type="ブロックをおく_ブロックを1つおく" id="pyCn`0:kBHo3UzJlM-s6"><field name="blockId">Block.PlanksBirch</field><next><block type="ブロックをおく_test" id="}=;Bw$L$Tjp9,jRNs@9r"><field name="block">Block.Grass</field></block></next></block></statement></block></xml>
