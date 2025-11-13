@@ -25,8 +25,9 @@ namespace ブロックをおく {
      * @param block describe block ID
      */
     //% block
-    export function ブロックを1つおく(block: number = GRASS): void {
-        agent.setItem(block, 1, 1)
+    //% blockId.defl=Block.PlanksBirch
+    export function ブロックを1つおく(blockId: Block=Block.PlanksBirch): void {
+        agent.setItem(blockId, 1, 1)
         agent.place(FORWARD)
         agent.move(LEFT, 1)
     }
@@ -37,10 +38,10 @@ namespace ブロックをおく {
      * @param length describe how many blocks agent sets, eg: 3
      */
     //% block
-    //% block.defl = Block.Grass
-    export function ブロックを1列ならべる(block: number = GRASS, length: number = 3): void {
+    //% blockId.defl=Block.PlanksBirch
+    export function ブロックを1列ならべる(blockId: Block = Block.PlanksBirch, length: number = 3): void {
         for (let index = 0; index < length - 1; index++) {
-            agent.setItem(block, 1, 1)
+            agent.setItem(blockId, 1, 1)
             agent.place(FORWARD)
             agent.move(LEFT, length)
         }
